@@ -49,14 +49,19 @@ const myInfo = {
 };
 
 sayName.call(myInfo);
-sayName.apply('joe');
 
 // Principle 3
-
 // code example for New Binding
+const Animal = function(color, name, type){
+    this.color = color;
+    this.name = name;
+    this.type = type;
+};
+
+const fox = new Animal('red', 'Juniper', 'Fox');
+console.log(fox);
 
 // Principle 4
-
 // code example for Window Binding
 const windowTest = function(){
     console.log(this.test);
